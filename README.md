@@ -18,3 +18,14 @@ It also acts as an **MCP (Model Context Protocol)** server provider, allowing AI
 
 ---
 *Note: This repository is used for distribution and releases. The source code is maintained privately.*
+
+## 🛠 Troubleshooting
+
+### macOS: "App is damaged and can't be opened"
+Because this app is not notarized by an Apple Developer account, macOS might put it in quarantine. To fix this:
+1. Move **CodeMap Space.app** to your `Applications` folder.
+2. Open **Terminal** and run:
+   ```bash
+   xattr -cr "/Applications/CodeMap Space.app"
+   ```
+3. Now you can open the app normally!
